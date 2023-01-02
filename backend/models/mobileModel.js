@@ -7,7 +7,7 @@ const mobileModel = new mongoose.Schema ({
     price : {type : Number},
     review : {type : String},
     img : {type : String},
-    available : {type : String, default : false},
+    available : {type : Boolean, default : false},
 }, {timestamps : true}
 )
 
