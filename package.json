@@ -1,0 +1,24 @@
+{
+  "name": "mobile-factory",
+  "version": "1.0.0",
+  "description": "<p>Here you can find all varients of smartphones and feature phones.</p>\r <p>You can access the best deal in the internet om a current day</p>\r <p>And many more</p>",
+  "main": "index.js",
+  "scripts": {
+    "server": "cd backend && npm start",
+    "client": "cd frontend && npm start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muhazAhmed/Restaurant--Website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muhazAhmed/Restaurant--Website/issues"
+  },
+  "homepage": "https://github.com/muhazAhmed/Restaurant--Website#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}
