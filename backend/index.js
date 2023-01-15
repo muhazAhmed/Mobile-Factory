@@ -3,6 +3,7 @@ const cors = require("cors")
 const app = express()
 require("dotenv").config();
 const mongoose=require("mongoose")
+const multer = require ('multer');
 const route = require ("./route")
 mongoose.set('strictQuery', true)
 const cookieParser = require("cookie-parser")
@@ -10,6 +11,7 @@ const cookieParser = require("cookie-parser")
 app.use(cors())
 app.use(express.json())
 app.use(cookieParser())
+app.use( multer().any())
 
 
 mongoose.connect(process.env.MONGO_CONNECTION,{useNewUrlParser:true})
